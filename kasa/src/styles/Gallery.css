@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.galleryContainer {
+  margin-top: 43px;
+  background-color:#F6F6F6;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  padding: 56px 50px;
+}
+
+
+.cardContainer {
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-color: #FF6060;
+    padding: 20px;   
+    cursor: pointer;
+    /* position: relative; */
+    margin-left: 10px;
+}
+
+
+.galleryImg{
+  object-fit: fill;
+  width: 150px;
+  height: 150px;
+}
+
+.cardLink{
+    text-decoration: none;
+    color: white;
+}

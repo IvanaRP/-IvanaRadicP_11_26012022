@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.homeWrapper{
+    width: 100%;
+    padding: 0 100px;
+}
+
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.brandContainer{
+    height: 250px;
+    width: 100%;
+}
