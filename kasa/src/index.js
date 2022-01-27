@@ -8,7 +8,7 @@ import About from './pages/About'
 import Location from './pages/Location'
 // import Error from './pages/Error'
 
-// import './sass/index.scss'
+import './styles/index.css'
 
 ReactDOM.render(  
     <React.StrictMode>
