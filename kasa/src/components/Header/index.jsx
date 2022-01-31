@@ -13,6 +13,7 @@ function Header() {
       <nav className='navContainer'>
         <Link to="/" className='header-link'>Accueil</Link>
         <Link to="/about" className='header-link'>A Propos</Link>
+        <Link to="/location" className='header-link'>Location</Link>
       </nav>
     </div>
 

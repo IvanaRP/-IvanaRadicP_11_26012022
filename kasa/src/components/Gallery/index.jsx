@@ -1,7 +1,7 @@
 import Card from '../Card'
 import "../../styles/Gallery.css";
 import React from "react";
-import Data from "../../datas/logements.json";
+import Data from "../../datas/data.json";
 
 // function Gallery() {
 //   return (
@@ -25,7 +25,7 @@ function Gallery() {
             {Data && Data.map((location, index) => (
                 <Card
                     key={`${location.title}-${index}`}
-                    cover = {location.cover}
+                    
                     title={location.title}
                     id= {location.id}
                     

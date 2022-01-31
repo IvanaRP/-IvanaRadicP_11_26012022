@@ -1,5 +1,6 @@
 import Gallery from '../../components/Gallery'
 import '../../styles/Home.css'
+import brandImg from '../../assets/background-home.png'
 
 
 function Home() {  
@@ -7,7 +8,8 @@ function Home() {
       <div className="homeWrapper">
           <div className='homeContainer'>           
               <div className="brandContainer">
-                  <h1>Chez vous, partout et ailleurs</h1>
+                  <h1 className="brandCTA">Chez vous, partout et ailleurs</h1>
+                  <img src={brandImg} alt="" className="brandImg" />
               </div>
               <Gallery />
           </div>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+.locationWrapper{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.locationContainer{
+    width: 100%;
+}
+
+.location-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    margin-top: 20px;
+}
