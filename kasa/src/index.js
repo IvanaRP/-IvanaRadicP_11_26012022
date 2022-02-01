@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Location from './pages/Location'
+import Locations from './pages/Locations'
 // import Error from './pages/Error'
 
 import './styles/index.css'
@@ -21,8 +21,8 @@ ReactDOM.render(
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/location">
-          <Location />
+        <Route path="/location/:idLocation">
+          <Locations />
         </Route>
       </Switch>
       <Footer />
