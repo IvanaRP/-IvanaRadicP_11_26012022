@@ -1,6 +1,8 @@
 // import {handleClickShow} from '../utils/function/event'
 import PropTypes from 'prop-types'
 
+import "../../styles/Description.css";
+
 /**
  * Description component
  * @param {props} description

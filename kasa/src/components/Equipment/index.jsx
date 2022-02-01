@@ -1,5 +1,6 @@
 // import {handleClickShow} from '../utils/function/event'
 import PropTypes from 'prop-types'
+import "../../styles/Equipment.css";
 
 /**
  * 

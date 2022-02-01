@@ -25,3 +25,22 @@
     align-items: center;  
     margin-top: 20px;
 }
+
+.location-content{
+    display: flex;
+    flex-direction: row;
+}
+.location-header-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.location-header-host{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.location-header-host img{
+    width: 64px;
+    border-radius: 50%;
+}
