@@ -15,9 +15,6 @@ function Header() {
         <Link to="/about" className="header-link">
           A Propos
         </Link>
-        <Link to="/location" className="header-link">
-          Location
-        </Link>
       </nav>
     </div>
   );

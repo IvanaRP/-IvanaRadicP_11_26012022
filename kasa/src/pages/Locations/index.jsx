@@ -55,7 +55,12 @@
 // import { useFetch } from '../utils/hooks/useFetch'
 import { data } from '../datas/data';
 import { useParams } from 'react-router-dom'
+import Carousel from '../../components/Carousel'
+import Description from  '../../components/Description'
+import Equipement from '../../components/Equipment'
 
+
+import "../../styles/Locations.css";
 /**
  * Loaction component
  * @returns the location details page
@@ -75,7 +80,11 @@ function Location() {
         <div className="locationWrapper">
             {myLocation && myLocation.map((location, index) => (
                 <div  key={`${location.title}-${index}`} className="locationContainer">
-                 
+                  <Carousel 
+                        id = {idLocation}
+                        cover = {location.cover}
+                        pictures = {location.pictures}
+                    />
                     <div className="location-header">
                         <div className="location-header-info">
                             <h1>{location.title}</h1>
@@ -88,7 +97,10 @@ function Location() {
                     </div>
                     
                     <div className="location-content">
-                     
+                      
+                    <Description description={location['description']} />
+                        <Equipement equipment={location['equipments']} />
+                      
                     </div>                
                 </div>
                         

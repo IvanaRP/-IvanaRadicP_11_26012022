@@ -3,9 +3,15 @@
 
 
 .locationWrapper{
+    display: flex;
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     padding: 0 100px;
+    flex-direction: column;
+    align-items: center;
+    color: #FF6060;
+    text-decoration: none;    
+   
 }
 
 .locationContainer{
