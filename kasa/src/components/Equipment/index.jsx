@@ -14,11 +14,15 @@ import { FaChevronDown } from "react-icons/fa";
 function Equipment({ equipment }) {
   function handleClick(e) {
     const content = document.getElementById("equipContent");
+    const icon = document.getElementById("equip-chevron-icon-down");
 
+    console.log(icon)
     if (content.style.display === "none") {
       content.style.display = "flex";
+      icon.classList.add("rotateIcon");
     } else {
       content.style.display = "none";
+      icon.classList.remove("rotateIcon");
     }
   }
 
@@ -27,7 +31,7 @@ function Equipment({ equipment }) {
       <div className="equip-header">
         <span>Equipements</span>
         <span id="chevron-descr">
-          <FaChevronDown className="chevron-icon-down" onClick={handleClick} />
+          <FaChevronDown  id="equip-chevron-icon-down" className="chevron-icon-down" onClick={handleClick} />
         </span>
       </div>
       <div className="equip-content" id="equipContent">
