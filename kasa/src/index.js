@@ -27,8 +27,8 @@ ReactDOM.render(
         <Route path='*'>
         <Error/>
       </Route>
-      <Footer />
       </Switch>
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

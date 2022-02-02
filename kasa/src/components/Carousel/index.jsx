@@ -1,19 +1,28 @@
-import React, { useState } from "react";
+
 import { data } from "../../pages/datas/data";
-import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos } from 'react-icons/fa';
+import { useParams } from "react-router-dom";
+// import Description from "../../components/Description";
+// import Equipement from "../../components/Equipment";
+
+import "../../styles/Locations.css";
+// import ImageSlider from "../../components/ImageSlider";
+
 
 function Carousel() {
-  // const [current, setCurrent] = useState(0);
-  // const length = slides.length;
+  const { idLocation } = useParams();
+  // const { data } = useFetch('../datas/data.json')
+
+  const myLocation = data?.filter((loc) => loc.id === idLocation);
 
   return (
-    <section className="slider">
-      {/* <MdOutlineArrowBackIosNew className="left-arrow" />
-      <MdOutlineArrowForwardIos className="right-arrow" />
-      {data.map((location, index) => {
-        return <img src={location.pictures} alt="imagecover"></img>;
-      })} */}
-    </section>
+    <div className="locationWrapper">
+      {myLocation &&
+        myLocation.map((location, index) => (
+          <div key={`${location.rating}-${index}`} className="locationContainer">
+           <h1>{location.rating}</h1>
+          </div>
+        ))}
+    </div>
   );
 }
 

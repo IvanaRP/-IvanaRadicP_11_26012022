@@ -7,15 +7,6 @@ import "../../styles/Description.css";
 import { FaChevronDown } from 'react-icons/fa';
 
 
-
-
-/**
- * Description component
- * @param {props} description
- * @returns the location description
- * using handleClickShow function for displaying or not the content. By default content is not displayed.
- */
-
 function Description({ description }) {
 
   function handleClick(e) {

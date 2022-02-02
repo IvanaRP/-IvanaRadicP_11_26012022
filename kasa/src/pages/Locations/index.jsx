@@ -3,8 +3,10 @@ import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 import Description from "../../components/Description";
 import Equipement from "../../components/Equipment";
+import Rating from '../../components/Rating';
 
 import "../../styles/Locations.css";
+// import ImageSlider from "../../components/ImageSlider";
 
 
 function Location() {
@@ -18,11 +20,8 @@ function Location() {
       {myLocation &&
         myLocation.map((location, index) => (
           <div key={`${location.title}-${index}`} className="locationContainer">
-            <Carousel
-              id={idLocation}
-              cover={location.cover}
-              pictures={location.pictures}
-            />
+          <Carousel/>
+       
             <div className="location-header">
               <div className="location-header-info">
                 <h1>{location.title}</h1>
@@ -41,7 +40,7 @@ function Location() {
                   ))}
                 </ul>
               </div>
-              <div>Rating</div>
+              <Rating rating={parseInt(location.rating)} />
             </div>
 
             <div className="location-content">
