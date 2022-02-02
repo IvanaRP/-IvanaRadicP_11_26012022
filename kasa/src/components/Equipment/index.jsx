@@ -35,9 +35,9 @@ function Equipment({ equipment }) {
         </span>
       </div>
       <div className="equip-content" id="equipContent">
-        <ul>
+        <ul className="equip-ul">
           {equipment.map((eq, index) => (
-            <li key={index}>{eq}</li>
+            <li className="equip-li" key={index}>{eq}</li>
           ))}
         </ul>
       </div>

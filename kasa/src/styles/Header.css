@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .headContainer {
   display: flex;
@@ -21,19 +20,17 @@
   align-items: flex-end;
 }
 
-
 .header-link {
-    color: #FF6060;
-    text-decoration: none;    
-    font-size: 24px;
-    text-align: center;
-    font-weight: 500;
-    font-style: normal;
-    margin-right: 10px;
+  color: #ff6060;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 10px;
 }
 
-
-/* .header-link-actived {
+/* .header-link:actived {
     color: #FF6060;
     text-decoration: none;  
     border-bottom: 2px solid #FF6060;  
@@ -42,3 +39,7 @@
     font-weight: 700;
     font-style: normal;
 } */
+
+a:active {
+  border-bottom: 3px solid red;
+}

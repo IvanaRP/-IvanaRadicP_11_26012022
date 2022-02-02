@@ -5,7 +5,7 @@ ul {
 .equipWrapper {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   width: 50%;
 }
 
@@ -37,4 +37,20 @@ ul {
 
 .rotateIcon{
   transform: rotateX(180deg);
+}
+
+
+
+.equip-ul{
+  display: flex;
+  flex-direction: column;
+}
+.equip-li{
+  display: flex;
+  flex-direction: row;
+  border-radius: 0%;
+  background-color: transparent;
+color: #ff6060;
+  padding: 5px;
+  margin-right: 10px;
 }

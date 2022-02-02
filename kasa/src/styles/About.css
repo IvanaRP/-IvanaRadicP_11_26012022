@@ -1,68 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .aboutWrapper {
-  width: 100%;
+
   padding: 0 100px;
 }
+.about-infoWrapper{
+  width: 80%;
+}
 
-/* .aboutContainer {
+.about{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-top: 50px;
-} */
+  align-items: center;
+}
 
 .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  height: 250px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  /* width: 100%; */
   background-color: black;
   border-radius: 25px;
   position: relative;
   margin-top: 50px;
 }
 
-/* .brandCTA{
-    color: white;
-    position: absolute; 
-    text-align: center;
-    width: 100%;
-    height: 0%;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 51;
-   
-} */
-
-.aboutImg{
-    opacity: 0.8;
-    height: 250px;
-    width: 100%;
-    background-color: #f7f7f7;
-    border-radius: 25px;
-    position: relative;
-    
+.aboutImg {
+  opacity: 0.8;
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  position: relative;
 }
 
-
-.aboutWrapperlinks{
+.aboutWrapperlinks {
   width: 100%;
   padding: 0 100px;
 }
 
-.aboutFiabilite{
-
+.aboutFiabilite {
   display: flex;
   align-items: center;
   color: white;
   width: 90%;
-  background-color: #FF6060;
-  /* padding: 0 100px; */
+  background-color: #ff6060;
   margin: 20px;
   border-radius: 5px;
+}
+
+
+/* fiabiliteWrapper */
+.about-infoWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.about-info-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.about-info-content {
+  font-weight: 300;
+  line-height: 1.6;
+  display: none;
+  color: #ff6060;
+  background-color: #f6f6f6;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.chevron-icon-down {
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+
+.rotateIcon {
+  transform: rotateX(180deg);
 }

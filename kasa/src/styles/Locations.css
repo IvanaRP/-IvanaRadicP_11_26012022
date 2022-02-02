@@ -1,46 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-
-.locationWrapper{
-    display: flex;
-    margin-top: 20px;
-    /* width: 100%; */
-    padding: 0 100px;
-    flex-direction: column;
-    align-items: center;
-    color: #FF6060;
-    text-decoration: none;    
-   
+.locationWrapper {
+  display: flex;
+  margin-top: 20px;
+  /* width: 100%; */
+  padding: 0 100px;
+  flex-direction: column;
+  align-items: center;
+  color: #ff6060;
+  text-decoration: none;
 }
 
-.locationContainer{
-    width: 100%;
+.locationContainer {
+  width: 100%;
 }
 
-.location-header{
+.location-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: row;
+}
+.location-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-header-host {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.location-header-host img {
+  width: 64px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.location-header-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.location-tags-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0%;
+}
+
+li{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  
-    margin-top: 20px;
+    padding: 5px;
+    border-radius: 18px;
+    background-color: #ff6060;
+    color: white;
+    margin-right: 10px;
 }
 
-.location-content{
+.location-header-name{
     display: flex;
+    word-break: break-all;
+    width: 52px;
+    justify-content: flex-end;
     flex-direction: row;
-}
-.location-header-info{
-    display: flex;
-    flex-direction: column;
-}
-
-.location-header-host{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-.location-header-host img{
-    width: 64px;
-    border-radius: 50%;
 }
