@@ -1,22 +1,31 @@
-.equipWrapper{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    width: 50%;
+.equipWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 50%;
 }
 
-.equip-header{
-    background-color: #FF6060;
-    color: white;
-   
-    border-radius: 5px;
-    padding: 5px;
+.equip-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.equip-content{
-  
-    color: #FF6060;
-  
-    border-radius: 5px;
-    padding: 5px;
+.equip-content {
+  display: none;
+  color: #ff6060;
+
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.chevron-icon-down{
+  display: flex;
+  color: rgb(255, 255, 255);
 }
