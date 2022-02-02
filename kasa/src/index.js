@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Locations from './pages/Locations'
-// import Error from './pages/Error'
+import Error from './pages/Error'
 
 import './styles/index.css'
 
@@ -24,8 +24,11 @@ ReactDOM.render(
         <Route path="/location/:idLocation">
           <Locations />
         </Route>
-      </Switch>
+        <Route path='*'>
+        <Error/>
+      </Route>
       <Footer />
+      </Switch>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

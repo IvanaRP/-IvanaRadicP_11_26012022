@@ -5,13 +5,7 @@ import Description from "../../components/Description";
 import Equipement from "../../components/Equipment";
 
 import "../../styles/Locations.css";
-/**
- * Loaction component
- * @returns the location details page
- * using personalized hook useFetch for data
- * using useParams hooks to get the location id
- * using Carousel, Rating, Description and Equipment components
- */
+
 
 function Location() {
   const { idLocation } = useParams();
