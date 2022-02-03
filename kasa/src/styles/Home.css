@@ -83,3 +83,14 @@
     height: 150px;
   }
 }
+
+
+/* Tablet version */
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  .homeWrapper {
+    padding: 0 25px;
+  }
+
+}

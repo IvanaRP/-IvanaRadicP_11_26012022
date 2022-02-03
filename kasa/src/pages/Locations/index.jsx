@@ -29,7 +29,7 @@ function Location() {
             <div className="location-header">
               <div className="location-header-info">
                 <h1>{location.title}</h1>
-                <span>{location.location}</span>
+                <h3>{location.location}</h3>
               </div>
               <div className="location-header-host">
                 <span className="location-header-name">{location.host["name"]}</span>

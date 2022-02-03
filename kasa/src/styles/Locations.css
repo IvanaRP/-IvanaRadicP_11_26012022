@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .locationWrapper {
+  font-family: Montserrat;
   display: flex;
   margin-top: 20px;
   /* width: 100%; */
@@ -28,6 +29,7 @@
   flex-direction: row;
 }
 .location-header-info {
+  font-family: Montserrat;
   display: flex;
   flex-direction: column;
 }
@@ -64,22 +66,113 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   padding: 0%;
+  font-size: 14px;
 }
 
-li{
+li {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  border-radius: 18px;
+  background-color: #ff6060;
+  color: white;
+  margin-right: 10px;
+}
+
+.location-header-name {
+  display: flex;
+  word-break: break-all;
+  width: 52px;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+/* Media querrie */
+
+/* Mobile version */
+
+@media screen and (max-width: 767px) {
+  .locationWrapper {
+    padding: 0 25px;
+    margin-top: 2px;
+  }
+
+  .location-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    align-content: flex-start;
+  }
+  .location-header-info h1 {
+    font-family: Montserrat;
+    font-style: Medium;
+    font-style: 18px;
+    line-height: 26px;
+    line-height: 143%;
+    box-align: Left;
+  }
+
+  .location-header-host {
+    left: 70%;
     display: flex;
     flex-direction: row;
-    padding: 5px;
-    border-radius: 18px;
+    align-items: flex-end;
+    right: 0%;
+    top: 20%;
+    position: relative;
+  }
+  .location-header-host img {
+    width: 32px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  .location-header-name {
+   font-size: 12px;
+  }
+  h1{
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  h3{
+    font-size: 14px;
+  }
+  li {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    border-radius: 10px;
     background-color: #ff6060;
     color: white;
     margin-right: 10px;
+  }
+
+  .location-tags-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .location-tagsList{
+    margin-bottom: 20px;
+  }
 }
 
-.location-header-name{
-    display: flex;
-    word-break: break-all;
-    width: 52px;
-    justify-content: flex-end;
-    flex-direction: row;
+
+/* Tablet version */
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+
+  .locationWrapper {
+    padding: 0 25px;
+    margin-top: 2px;
+  }
 }
