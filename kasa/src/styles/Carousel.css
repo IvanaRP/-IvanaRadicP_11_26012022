@@ -1,0 +1,38 @@
+
+.slideContainer{
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.slideImg{
+  height: 250px;
+  width: 100%;
+  border-radius: 25px;
+  position: relative;
+  object-fit: cover;
+}
+
+.btn-left{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    padding: 10px;
+    z-index: 40;
+    height: 30px;
+    text-shadow:  3px 3px 3px #272634;
+}
+
+.btn-right{
+    color: white;
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    padding: 10px;
+    z-index: 40;
+    height: 30px;
+    text-shadow:  3px 3px 3px #272634;
+}

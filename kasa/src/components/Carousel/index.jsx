@@ -1,29 +1,81 @@
-
-import { data } from "../../pages/datas/data";
-import { useParams } from "react-router-dom";
-// import Description from "../../components/Description";
-// import Equipement from "../../components/Equipment";
-
-import "../../styles/Locations.css";
-// import ImageSlider from "../../components/ImageSlider";
+import { useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import '../../styles/Carousel.css'
 
 
-function Carousel() {
-  const { idLocation } = useParams();
-  // const { data } = useFetch('../datas/data.json')
+function Carousel({ id, cover, pictures }) {
+  const currentPicture = useRef(null);
+  
+  const counter = pictures.length;
 
-  const myLocation = data?.filter((loc) => loc.id === idLocation);
+  let pictureCounter = 0;
+  useEffect(() => startCarousel());
+
+  const startCarousel = () => {
+    currentPicture.current.src = pictures[0];
+  };
+
+  const handleCarousel = (picture) => {
+    currentPicture.current.src = pictures[picture - 1];
+    animateCarousel(currentPicture);
+  };
+
+  const animateCarousel = () => {
+    currentPicture.current.classList.add("fadeIn");
+    setTimeout(() => {
+      currentPicture.current.classList.remove("fadeIn");
+    }, 700);
+  };
+
+  const goToPreviousPicture = () => {
+    if (pictureCounter === 0) {
+      handleCarousel(pictures.length);
+      pictureCounter = pictures.length;
+    }
+
+    handleCarousel(pictureCounter);
+    pictureCounter--;
+  };
+
+  const gotToNextPicture = () => {
+    if (pictureCounter === pictures.length - 1) {
+      startCarousel();
+      pictureCounter = -1;
+    }
+
+    currentPicture.current.src = pictures[pictureCounter + 1];
+    pictureCounter++;
+  };
+
+ 
 
   return (
-    <div className="locationWrapper">
-      {myLocation &&
-        myLocation.map((location, index) => (
-          <div key={`${location.rating}-${index}`} className="locationContainer">
-           <h1>{location.rating}</h1>
+    <div className="slideWrapper">
+      <div className="slideContainer">
+        {counter === 1 ? (
+          <img src={cover} alt="Carrousel"  />
+        ) : (
+          <div>
+             <FaChevronLeft id="chevron-icon-down" className="btn-left" onClick={goToPreviousPicture}/>
+            <img
+              src={currentPicture}
+              ref={currentPicture}
+              alt=""
+              className="slideImg"
+            />
+             <FaChevronRight id="chevron-icon-down" className="btn-right" onClick={gotToNextPicture}/>
           </div>
-        ))}
+        )}
+      </div>
     </div>
   );
 }
+
+Carousel.propTypes = {
+  id: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+  pictures: PropTypes.array.isRequired,
+};
 
 export default Carousel;

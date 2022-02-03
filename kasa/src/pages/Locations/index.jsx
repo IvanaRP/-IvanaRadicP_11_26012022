@@ -20,7 +20,11 @@ function Location() {
       {myLocation &&
         myLocation.map((location, index) => (
           <div key={`${location.title}-${index}`} className="locationContainer">
-          <Carousel/>
+          <Carousel 
+                        id = {idLocation}
+                        cover = {location.cover}
+                        pictures = {location.pictures}
+                    />
        
             <div className="location-header">
               <div className="location-header-info">
