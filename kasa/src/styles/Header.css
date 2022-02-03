@@ -35,3 +35,25 @@
 a:active {
   border-bottom: 3px solid red;
 }
+
+
+
+/* Media querrie */
+
+/* Mobile version */
+
+@media screen and (max-width: 767px) {
+  .headContainer {
+    padding: 0 25px;
+  }
+
+ .headLogo{
+   height: 20px;
+ }
+
+  .header-link{
+    font-size: 12px;
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+}  

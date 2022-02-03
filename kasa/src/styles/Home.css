@@ -45,3 +45,41 @@
   position: relative;
   object-fit: cover;
 }
+
+/* Media querrie */
+
+/* Mobile version */
+
+@media screen and (max-width: 767px) {
+  .homeWrapper {
+    padding: 0 25px;
+  }
+
+  .homeContainer {
+    margin-top: 30px;
+  }
+
+  .brandContainer {
+    height: 110px;
+  }
+  .brandCTA {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: left;
+    line-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+  }
+
+  .brandImg {
+    height: 150px;
+  }
+}
