@@ -9,6 +9,7 @@ ul {
   display: flex;
   flex-direction: column;
   /* padding: 20px; */
+  padding-bottom: 30px;
   width: 50%;
 }
 
@@ -71,7 +72,21 @@ ul {
   .equip-ul {
     font-size: 16px;
   }
-  li{
+  .equip-li{
+    font-size: 16px;
+  }
+}
+
+
+/* Tablet version */
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+
+  .equip-ul {
+    font-size: 16px;
+  }
+  .equip-li{
     font-size: 16px;
   }
 }

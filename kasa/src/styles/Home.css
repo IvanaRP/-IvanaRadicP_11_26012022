@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .homeWrapper {
+  font-family: Montserrat;
   padding: 0 150px;
 }
 
