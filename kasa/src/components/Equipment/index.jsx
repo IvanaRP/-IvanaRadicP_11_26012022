@@ -18,9 +18,11 @@ function Equipment({ equipment }) {
 
     console.log(icon)
     if (content.style.display === "none") {
+      console.log('if')
       content.style.display = "flex";
       icon.classList.add("rotateIcon");
     } else {
+      console.log('else')
       content.style.display = "none";
       icon.classList.remove("rotateIcon");
     }

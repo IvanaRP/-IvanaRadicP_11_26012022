@@ -4,9 +4,9 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import '../../styles/Carousel.css'
 
 
-function Carousel({ id, cover, pictures }) {
+function Carousel({ cover, pictures }) {
+
   const currentPicture = useRef(null);
-  
   const counter = pictures.length;
 
   let pictureCounter = 0;

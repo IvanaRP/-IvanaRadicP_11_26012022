@@ -81,10 +81,11 @@ li {
 
 .location-header-name {
   display: flex;
-  word-break: break-all;
+  /* word-break: break-all; */
   width: 52px;
   justify-content: flex-end;
   flex-direction: row;
+  text-align: end;
 }
 
 /* Media querrie */

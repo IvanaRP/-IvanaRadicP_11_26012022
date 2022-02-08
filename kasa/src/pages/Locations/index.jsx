@@ -1,21 +1,44 @@
-import { data } from "../datas/data";
+// import { data } from "../datas/data";
 import { useParams } from "react-router-dom";
+// import { useEffect } from "react";
 import Carousel from "../../components/Carousel";
 import Description from "../../components/Description";
 import Equipement from "../../components/Equipment";
 import Rating from '../../components/Rating';
+// import Error from "../../pages/Error";
+
+
 
 import "../../styles/Locations.css";
-// import ImageSlider from "../../components/ImageSlider";
+import data from '../datas/data.json';
+
+
+
+
 
 
 function Location() {
-  const { idLocation } = useParams();
-  // const { data } = useFetch('../datas/data.json')
 
-  const myLocation = data?.filter((loc) => loc.id === idLocation);
+  
+        const { idLocation } = useParams();
+      //  console.log(idLocation)
 
+      const lastSegmentOfUrl = window.location.href.split("/").pop();
+      console.log(lastSegmentOfUrl)
+      // const url = window.location.href.includes({idLocation});
+      //  console.log(url)
+        const myLocation = data?.filter((loc) => loc.id === idLocation);
+        console.log(myLocation)
+
+
+
+    
+  // if (lastSegmentOfUrl !== myLocation) {
+  //   console.log(myLocation.id);
+  //   console.log(lastSegmentOfUrl)
+  //   console.log('ok')
   return (
+
     <div className="locationWrapper">
       {myLocation &&
         myLocation.map((location, index) => (
@@ -55,6 +78,12 @@ function Location() {
         ))}
     </div>
   );
+// } else  {
+//   console.log(lastSegmentOfUrl)
+//   return (
+  
+// <Redirect to="/404" />)
+// }
 }
 
 export default Location;
