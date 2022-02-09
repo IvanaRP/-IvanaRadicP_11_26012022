@@ -26,7 +26,7 @@ ReactDOM.render(
 
         <Route
           exact
-          path="/:idLocation"
+          path="/location/:idLocation"
           render={({ match }) => {
             const location = data.find(
               (location) => location.id === match.params.idLocation
@@ -40,7 +40,6 @@ ReactDOM.render(
         />
 
         <Route component={Error}></Route>
-
       </Switch>
       <Footer />
     </Router>

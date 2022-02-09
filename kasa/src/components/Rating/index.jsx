@@ -10,10 +10,10 @@ function Rating({rating}) {
 
 const ratStr = rating.toString();
 console.log(ratStr)
-    const DEFAULT_RATING = 5
+    const defaultRating = 5
 
     const fullStar = [...Array(rating)].map((star, index) => (<img src={FullStar} alt="" key={index} className="rates" />))
-    const emptyStarNumber = DEFAULT_RATING-rating
+    const emptyStarNumber = defaultRating-rating
     const emptyStar = [...Array(emptyStarNumber)].map((star, index) => (<img src={EmptyStar} alt="" key={index} className="rates" />))
 
     return (
@@ -25,7 +25,7 @@ console.log(ratStr)
 }
 
 Rating.propTypes = {
-    rating: PropTypes.string.isRequired
+    rating: PropTypes.number.isRequired
 }
 
 export default Rating

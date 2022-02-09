@@ -5,7 +5,7 @@ function Card({ title, id }) {
 
     return  (
         <div className="cardContainer">
-            <Link to={`/${id}`} className="cardLink">
+            <Link to={`/location/${id}`} className="cardLink">
                 <div className="cardContent">
                     <span>{title}</span>
                 </div>
