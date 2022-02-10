@@ -4,58 +4,39 @@ import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
 import Description from "../../components/Description";
 import Equipement from "../../components/Equipment";
-import Rating from '../../components/Rating';
-// import Error from "../../pages/Error";
-
-
+import Rating from "../../components/Rating";
 
 import "../../styles/Locations.css";
-import data from '../datas/data.json';
-
-
-
-
-
+import data from "../datas/data.json";
 
 function Location() {
+  const { idLocation } = useParams();
 
-  
-        const { idLocation } = useParams();
-      //  console.log(idLocation)
+  // const lastSegmentOfUrl = window.location.href.split("/").pop();
+  // console.log(lastSegmentOfUrl);
 
-      const lastSegmentOfUrl = window.location.href.split("/").pop();
-      console.log(lastSegmentOfUrl)
-      // const url = window.location.href.includes({idLocation});
-      //  console.log(url)
-        const myLocation = data?.filter((loc) => loc.id === idLocation);
-        console.log(myLocation)
+  const myLocation = data?.filter((loc) => loc.id === idLocation);
 
-
-
-    
-  // if (lastSegmentOfUrl !== myLocation) {
-  //   console.log(myLocation.id);
-  //   console.log(lastSegmentOfUrl)
-  //   console.log('ok')
   return (
-
     <div className="locationWrapper">
       {myLocation &&
         myLocation.map((location, index) => (
           <div key={`${location.title}-${index}`} className="locationContainer">
-          <Carousel 
-                        id = {idLocation}
-                        cover = {location.cover}
-                        pictures = {location.pictures}
-                    />
-       
+            <Carousel
+              id={idLocation}
+              cover={location.cover}
+              pictures={location.pictures}
+            />
+
             <div className="location-header">
               <div className="location-header-info">
                 <h1>{location.title}</h1>
                 <h3>{location.location}</h3>
               </div>
               <div className="location-header-host">
-                <span className="location-header-name">{location.host["name"]}</span>
+                <span className="location-header-name">
+                  {location.host["name"]}
+                </span>
                 <img src={location.host["picture"]} alt="Hôte illustration" />
               </div>
             </div>
@@ -78,12 +59,7 @@ function Location() {
         ))}
     </div>
   );
-// } else  {
-//   console.log(lastSegmentOfUrl)
-//   return (
-  
-// <Redirect to="/404" />)
-// }
+
 }
 
 export default Location;
