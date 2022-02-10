@@ -8,8 +8,8 @@ import '../../styles/Rating.css'
 
 function Rating({rating}) {
 
-const ratStr = rating.toString();
-console.log(ratStr)
+// const ratStr = rating.toString();
+// console.log(ratStr)
     const defaultRating = 5
 
     const fullStar = [...Array(rating)].map((star, index) => (<img src={FullStar} alt="" key={index} className="rates" />))
