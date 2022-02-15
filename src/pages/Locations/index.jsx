@@ -7,7 +7,7 @@ import Equipement from "../../components/Equipment";
 import Rating from "../../components/Rating";
 
 import "../../styles/Locations.css";
-import data from "../datas/data.json";
+import data from "../../datas/data.json";
 
 function Location() {
   const { idLocation } = useParams();
