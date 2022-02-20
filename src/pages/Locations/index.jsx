@@ -1,6 +1,5 @@
-// import { data } from "../datas/data";
+
 import { useParams } from "react-router-dom";
-// import { useEffect } from "react";
 import Carousel from "../../components/Carousel";
 import Description from "../../components/Description";
 import Equipement from "../../components/Equipment";
@@ -12,8 +11,6 @@ import data from "../../datas/data.json";
 function Location() {
   const { idLocation } = useParams();
 
-  // const lastSegmentOfUrl = window.location.href.split("/").pop();
-  // console.log(lastSegmentOfUrl);
 
   const myLocation = data?.filter((loc) => loc.id === idLocation);
 
@@ -27,7 +24,6 @@ function Location() {
               cover={location.cover}
               pictures={location.pictures}
             />
-
             <div className="location-header">
               <div className="location-header-info">
                 <h1>{location.title}</h1>

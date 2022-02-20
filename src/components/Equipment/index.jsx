@@ -1,15 +1,8 @@
-// import {handleClickShow} from '../utils/function/event'
+
 import PropTypes from "prop-types";
 import "../../styles/Equipment.css";
-
 import { FaChevronDown } from "react-icons/fa";
 
-/**
- *
- * @param {props} equipment
- * @returns the location equipements
- * using handleClickShow function for displaying or not the content. By default content is not displayed.
- */
 
 function Equipment({ equipment }) {
   function handleClick(e) {

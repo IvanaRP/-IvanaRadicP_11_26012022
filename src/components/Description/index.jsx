@@ -1,9 +1,6 @@
-// import {handleClickShow} from '../utils/function/event'
 import PropTypes from "prop-types";
 import React from "react";
 import "../../styles/Description.css";
-
-
 import { FaChevronDown } from 'react-icons/fa';
 
 
