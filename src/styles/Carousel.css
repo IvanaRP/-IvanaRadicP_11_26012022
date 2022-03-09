@@ -36,3 +36,16 @@
     height: 30px;
     text-shadow:  3px 3px 3px #272634;
 }
+
+.slideNumber{
+  color: white;
+  z-index: 40;
+  height: 30px;
+  position: absolute;
+  left: 48.95%;
+  right: 49.11%;
+  top: 86.19%;
+  bottom: 6.01%;
+  font-weight: 900;
+  margin: 0;
+}
