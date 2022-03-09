@@ -6,8 +6,12 @@ import '../../styles/Carousel.css'
 
 function Carousel({ cover, pictures }) {
 
+
+
   const currentPicture = useRef(null);
   const counter = pictures.length;
+ 
+  
 
   let pictureCounter = 0;
   useEffect(() => startCarousel());
@@ -48,10 +52,17 @@ function Carousel({ cover, pictures }) {
     pictureCounter++;
   };
 
- 
+
+  console.log([currentPicture.length] + 1);
+  console.log(pictureCounter + 1);
+  console.log(counter);
+  console.log(pictures[pictureCounter + 1])
+  console.log([currentPicture].length)
+  console.log(currentPicture.current.src);
 
   return (
     <div className="slideWrapper">
+   
       <div className="slideContainer">
         {counter === 1 ? (
           <img src={cover} alt="Carrousel"  />
@@ -64,9 +75,12 @@ function Carousel({ cover, pictures }) {
               alt=""
               className="slideImg"
             />
+    <p> {pictureCounter + 1}/{counter}</p>
              <FaChevronRight id="chevron-icon-down" className="btn-right" onClick={gotToNextPicture}/>
           </div>
+          
         )}
+         <p> {currentPicture + 1}/{counter}</p>
       </div>
     </div>
   );
