@@ -96,7 +96,7 @@ function About() {
                 </span>
               </div>
               {clicked === index ? (
-                <div>
+                <div className="about-info-content">
                   <p>{item.text}</p>
                 </div>
               ) : null}
