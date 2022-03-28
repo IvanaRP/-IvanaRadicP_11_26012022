@@ -25,7 +25,7 @@ function About() {
           <img src={aboutImg} alt="" className="aboutImg" />
         </div>
       </div>
-      <div className="features">
+      <div className="about-info">
         {about.map((item, index) => {
           return (
             <>
@@ -34,7 +34,7 @@ function About() {
                 onClick={() => toggle(index)}
                 key={index}
               >
-                <h1 className="feature-item-title">{item.title}</h1>
+                <span className="about-item-title">{item.title}</span>
                 <span>
                   {clicked === index ? (
                     <FaChevronDown
