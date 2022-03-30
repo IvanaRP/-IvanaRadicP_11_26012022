@@ -33,7 +33,6 @@ function Carousel({ cover, pictures }) {
                 )
             )}
             <p className="slideNumber">
-              {" "}
               {current + 1}/{counter}
             </p>
             <FaChevronRight
