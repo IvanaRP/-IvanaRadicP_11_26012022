@@ -30,13 +30,9 @@
   margin-left: 35px;
 }
 
-
-
-a:active {
+/* a:active {
   border-bottom: 3px solid red;
-}
-
-
+} */
 
 /* Media querrie */
 
@@ -47,16 +43,16 @@ a:active {
     padding: 0 25px;
   }
 
- .headLogo{
-   height: 20px;
- }
+  .headLogo {
+    height: 20px;
+  }
 
-  .header-link{
+  .header-link {
     font-size: 12px;
     margin-left: 15px;
     text-transform: uppercase;
   }
-}  
+}
 
 /* Tablet version */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -65,5 +61,4 @@ a:active {
   .headContainer {
     padding: 0 25px;
   }
-
 }

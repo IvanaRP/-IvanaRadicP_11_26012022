@@ -10,13 +10,13 @@ import { FaChevronUp } from "react-icons/fa";
 function About() {
   const [clicked, setClicked] = useState(false);
 
-  const toggle = (index) => {
-    if (clicked === index) {
+  const toggle = (itemIndex) => {
+    if (clicked === itemIndex) {
       //if clicked arrow is already active, then close it
       return setClicked(null);
     }
 
-    setClicked(index);
+    setClicked(itemIndex);
   };
   return (
     <div className="aboutWrapper">
@@ -26,17 +26,17 @@ function About() {
         </div>
       </div>
       <div className="about-info">
-        {about.map((item, index) => {
+        {about.map((item, itemIndex) => {
           return (
             <>
               <div
                 className="about-info-header"
-                onClick={() => toggle(index)}
-                key={index}
+                onClick={() => toggle(itemIndex)}
+                key={itemIndex}
               >
                 <span className="about-item-title">{item.title}</span>
                 <span>
-                  {clicked === index ? (
+                  {clicked === itemIndex ? (
                     <FaChevronDown
                       id="chevron-icon-down"
                       className="chevron-icon-down"
@@ -46,7 +46,7 @@ function About() {
                   )}
                 </span>
               </div>
-              {clicked === index ? (
+              {clicked === itemIndex ? (
                 <div className="about-info-content">
                   <p>{item.text}</p>
                 </div>
