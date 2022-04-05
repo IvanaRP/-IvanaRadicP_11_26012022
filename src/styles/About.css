@@ -88,6 +88,31 @@
 .rotateIcon {
   transform: rotateX(180deg);
 }
+.contentWrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+  width: inherit;
+}
+.accordion-content {
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ff6060;
+  background-color: #f6f6f6;
+  border-radius: 7px;
+  padding: 15px;
+  width: inherit;
+  margin-bottom: 20px;
+}
 
 /* Media querrie */
 

@@ -66,7 +66,6 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   padding: 0%;
-  font-size: 14px;
 }
 
 li {
@@ -103,7 +102,7 @@ li {
     flex-direction: column;
   }
 
-  .location-header{
+  .location-header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -135,13 +134,13 @@ li {
     margin-left: 20px;
   }
   .location-header-name {
-   font-size: 12px;
+    font-size: 12px;
   }
-  h1{
+  h1 {
     font-size: 18px;
     margin-bottom: 2px;
   }
-  h3{
+  h3 {
     font-size: 14px;
   }
   li {
@@ -162,17 +161,15 @@ li {
     z-index: 50;
   }
 
-  .location-tagsList{
+  .location-tagsList {
     margin-bottom: 28px;
   }
 }
-
 
 /* Tablet version */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 
 @media screen and (min-width: 768px) and (max-width: 1150px) {
-
   .locationWrapper {
     padding: 0 25px;
     margin-top: 2px;
