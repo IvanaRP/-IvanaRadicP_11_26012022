@@ -1,16 +1,18 @@
-
 import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
-import Description from "../../components/Description";
-import Equipement from "../../components/Equipment";
+// import Description from "../../components/Description";
+// import Equipement from "../../components/Equipment";
 import Rating from "../../components/Rating";
 
+import Dropdown from "../../components/Dropdown";
+
 import "../../styles/Locations.css";
+import "../../styles/Description.css";
+import "../../styles/Equipment.css";
 import data from "../../datas/data.json";
 
 function Location() {
   const { idLocation } = useParams();
-
 
   const myLocation = data?.filter((loc) => loc.id === idLocation);
 
@@ -48,14 +50,29 @@ function Location() {
             </div>
 
             <div className="location-content">
-              <Description description={location["description"]} />
-              <Equipement equipment={location["equipments"]} />
+              <div className="descrWrapper">
+                <Dropdown
+                  title={"Description"}
+                  content={location.description}
+                />
+              </div>
+              <div className="equipWrapper">
+                <Dropdown
+                  title={"Equipement"}
+                  content={location["equipments"].map((eq, equip) => (
+                    <ul className="equip-ul">
+                      <li className="equip-li" key={`${equip}-${idLocation}`}>
+                        {eq}
+                      </li>
+                    </ul>
+                  ))}
+                />
+              </div>
             </div>
           </div>
         ))}
     </div>
   );
-
 }
 
 export default Location;

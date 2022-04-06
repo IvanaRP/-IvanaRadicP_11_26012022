@@ -72,16 +72,27 @@
     flex-direction: column;
     align-content: flex-start;
     background-color: #ffffff;
-    margin-top: 20px;
-    padding: 0;
+    margin-top: -43px;
+    align-items: center;
   }
   .cardContainer {
-    display: flex;
+    /* display: flex;
     align-items: flex-end;
     width: 90%;
     height: 170px;
-    margin: 10px;
-    margin-left: 0;
-    padding: 20px;
+    padding: 20px; */
+    left: -57px;
+  }
+
+  .cardTitle {
+    bottom: 30px;
+    width: fit-content;
+    left: 19px;
+  }
+  .cardImg {
+    object-fit: cover;
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
   }
 }
