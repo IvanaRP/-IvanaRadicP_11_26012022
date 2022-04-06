@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import Carousel from "../../components/Carousel";
-// import Description from "../../components/Description";
-// import Equipement from "../../components/Equipment";
+
 import Rating from "../../components/Rating";
 
 import Dropdown from "../../components/Dropdown";
