@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 you can visit the website on
-(https://ivanarp-p11.netlify.app/)
+https://ivanarp-p11.netlify.app/
