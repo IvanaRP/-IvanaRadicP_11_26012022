@@ -1,3 +1,11 @@
+# Project 11 Kasa
+
+you can visit the website on
+https://ivanarp-p11.netlify.app/
+
+KASA Getting Started with Create React App."<br>
+ Objectif: "Develop a web application with React and React Router.",
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
